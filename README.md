@@ -1,5 +1,7 @@
 # rk3588-cpp-edge-vision-nvr-lite
 
+[中文文档](README.zh-CN.md)
+
 Lightweight C++ edge AI NVR for RK3588. It follows the mature deployment shape of edge NVR systems, but it is an independent small codebase: OpenCV video input, RKNN Runtime C API inference, YOLO postprocess, MJPEG web preview, event snapshots, JSONL logs, performance stats, optional MQTT placeholder, and Docker packaging.
 
 The board-side service is C++. Python is not used as the runtime service; the only Python usage is the optional benchmark CSV formatter in `scripts/benchmark.sh`.
