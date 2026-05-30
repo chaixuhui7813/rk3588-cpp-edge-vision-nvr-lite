@@ -1,0 +1,15 @@
+build/
+.venv*/
+deploy/
+board_results/
+data/events/*
+!data/events/.gitkeep
+*.onnx
+check*_*.onnx
+*.log
+*.pid
+*.tmp
+*.bak
+__pycache__/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RK3588 Edge Vision NVR Lite</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <h1>RK3588 Edge Vision NVR Lite</h1>
+        <p id="health">connecting...</p>
+      </div>
+      <div class="status">
+        <span id="fps">0.0 FPS</span>
+        <span id="latency">0.0 ms</span>
+      </div>
+    </header>
+    <section class="grid">
+      <div class="viewer">
+        <img id="video" src="/api/video_feed" alt="video feed">
+      </div>
+      <aside class="panel">
+        <div class="metric"><span>Frames</span><strong id="frames">0</strong></div>
+        <div class="metric"><span>Inference</span><strong id="infer">0.0 ms</strong></div>
+        <div class="metric"><span>Events</span><strong id="events-count">0</strong></div>
+        <div class="metric"><span>Dropped</span><strong id="dropped">0</strong></div>
+        <h2>Recent Events</h2>
+        <div id="events" class="events"></div>
+      </aside>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

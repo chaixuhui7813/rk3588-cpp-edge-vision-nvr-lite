@@ -1,0 +1,7 @@
+model: yolov8n_rockchip_int8.rknn
+source_onnx: models/model_zoo/yolov8n_rockchip.onnx
+conversion: rknn-toolkit2 2.3.2, target rk3588, int8 quantization
+calibration: data/1test.mp4 sampled to 64 letterboxed 640x640 frames, pad_value=0
+outputs: Rockchip YOLOv8 model-zoo 9-output head (box DFL + class + score per stride)
+runtime: use model.letterbox_value=0; C++ postprocess supports DFL path and single-output YOLOv8 fallback
+validated_on_board: RK3588 / 172.20.10.2, 3 workers queue_size=2, ~79 FPS benchmark, NPU load 100%@1GHz

@@ -1,0 +1,14 @@
+services:
+  edge_vision_nvr:
+    build: .
+    container_name: rk3588-edge-vision-nvr-lite
+    network_mode: host
+    privileged: true
+    devices:
+      - /dev:/dev
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+      - /dev/dri:/dev/dri
+      - /dev/rknpu:/dev/rknpu
+    command: ["./build/edge_vision_nvr", "--config", "config.yaml", "--mock"]
