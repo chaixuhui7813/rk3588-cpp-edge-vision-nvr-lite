@@ -2,6 +2,7 @@ build/
 .venv*/
 deploy/
 board_results/
+benchmark_results/
 data/events/*
 !data/events/.gitkeep
 *.onnx

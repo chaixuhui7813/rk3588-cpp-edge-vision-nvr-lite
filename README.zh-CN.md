@@ -317,13 +317,15 @@ RKNN 对比：
 MODE=--rknn bash scripts/benchmark.sh data/vtest.avi
 ```
 
-脚本会对比 1、2、3 个 worker，并输出：
+脚本会对比 1、2、3 个 worker，并生成可归档结果：
 
-- 总帧数
-- 平均 FPS
-- 平均推理耗时
-- 平均后处理耗时
-- 平均端到端延迟
+```text
+benchmark_results/<timestamp>/benchmark_summary.csv
+benchmark_results/<timestamp>/benchmark_summary.json
+benchmark_results/<timestamp>/metrics_workers_<N>.csv
+```
+
+其中 summary 文件包含总帧数、平均 FPS、推理耗时、后处理耗时、端到端延迟、丢帧数量、CPU 和内存等字段。
 
 已验证板端数据：
 
@@ -433,6 +435,18 @@ data/events/
 ```
 
 不需要源码、CMake、build 中间文件或 Python 环境。
+
+生成最小 runtime 包：
+
+```bash
+bash scripts/package_runtime_minimal.sh
+```
+
+## 工程交付文档
+
+- [RK3588 板端验证手册](docs/BOARD_VALIDATION.zh-CN.md)
+- [交付检查清单](docs/DELIVERY_CHECKLIST.zh-CN.md)
+- [中文面试讲解稿](docs/INTERVIEW_GUIDE.zh-CN.md)
 
 ## 简历项目描述
 

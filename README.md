@@ -241,9 +241,21 @@ RKNN comparison:
 MODE=--rknn bash scripts/benchmark.sh /path/to/video.mp4
 ```
 
-It compares 1, 2, and 3 workers and prints total frames, FPS, average inference, postprocess, and total latency.
+It compares 1, 2, and 3 workers and writes reproducible artifacts:
+
+```text
+benchmark_results/<timestamp>/benchmark_summary.csv
+benchmark_results/<timestamp>/benchmark_summary.json
+benchmark_results/<timestamp>/metrics_workers_<N>.csv
+```
 
 On the tested RK3588 board with the INT8 Rockchip YOLOv8n RKNN model and `data/1test.mp4`, `num_workers=3`, `queue_size=2` reached about 79 FPS with NPU devfreq load sampled at 100% at 1 GHz. The older floating-point single-output model reached about 32 FPS. Larger queues did not improve FPS and increased end-to-end latency.
+
+## Delivery Docs
+
+- [RK3588 board validation guide](docs/BOARD_VALIDATION.zh-CN.md)
+- [Delivery checklist](docs/DELIVERY_CHECKLIST.zh-CN.md)
+- [Chinese interview guide](docs/INTERVIEW_GUIDE.zh-CN.md)
 
 ## Docker
 

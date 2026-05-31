@@ -1,7 +1,7 @@
 [
   [
     ".gitignore",
-    152
+    171
   ],
   [
     "classes.txt",
@@ -25,19 +25,31 @@
   ],
   [
     "README.md",
-    9297
+    9624
   ],
   [
     "README.zh-CN.md",
-    11208
+    11727
   ],
   [
     "RELEASE_MANIFEST.json",
-    2506
+    2603
   ],
   [
     "data/vtest.avi",
     8131690
+  ],
+  [
+    "docs/BOARD_VALIDATION.zh-CN.md",
+    4793
+  ],
+  [
+    "docs/DELIVERY_CHECKLIST.zh-CN.md",
+    1556
+  ],
+  [
+    "docs/INTERVIEW_GUIDE.zh-CN.md",
+    5656
   ],
   [
     "include/config.hpp",
@@ -97,7 +109,11 @@
   ],
   [
     "scripts/benchmark.sh",
-    1385
+    151
+  ],
+  [
+    "scripts/benchmark_workers.sh",
+    3701
   ],
   [
     "scripts/build_board.sh",
@@ -106,6 +122,10 @@
   [
     "scripts/check_env.sh",
     1253
+  ],
+  [
+    "scripts/collect_system_metrics.sh",
+    2570
   ],
   [
     "scripts/convert_yolov8n_rknn.sh",
@@ -122,6 +142,10 @@
   [
     "scripts/local_smoke_test.sh",
     1225
+  ],
+  [
+    "scripts/package_runtime_minimal.sh",
+    1590
   ],
   [
     "scripts/render_result_video.sh",
