@@ -5,45 +5,14 @@
       "includePath": [
         "${workspaceFolder}/include",
         "${workspaceFolder}/third_party/httplib",
-        "${workspaceFolder}/.vscode/intellisense-stubs",
         "${workspaceFolder}/rk3588-cpp-edge-vision-nvr-lite-github/include",
         "${workspaceFolder}/rk3588-cpp-edge-vision-nvr-lite-github/third_party/httplib",
-        "${workspaceFolder}/rk3588-cpp-edge-vision-nvr-lite-github/.vscode/intellisense-stubs",
         "D:/13588/rk3588-cpp-edge-vision-nvr-lite-github/include",
-        "D:/13588/rk3588-cpp-edge-vision-nvr-lite-github/third_party/httplib",
-        "D:/13588/rk3588-cpp-edge-vision-nvr-lite-github/.vscode/intellisense-stubs",
-        "${workspaceFolder}/**"
+        "D:/13588/rk3588-cpp-edge-vision-nvr-lite-github/third_party/httplib"
       ],
       "defines": [],
-      "cStandard": "c17",
       "cppStandard": "c++17",
       "intelliSenseMode": "windows-msvc-x64"
-    },
-    {
-      "name": "Linux-RK3588",
-      "includePath": [
-        "${workspaceFolder}/include",
-        "${workspaceFolder}/third_party/httplib",
-        "${workspaceFolder}/rk3588-cpp-edge-vision-nvr-lite-github/include",
-        "${workspaceFolder}/rk3588-cpp-edge-vision-nvr-lite-github/third_party/httplib",
-        "D:/13588/rk3588-cpp-edge-vision-nvr-lite-github/include",
-        "D:/13588/rk3588-cpp-edge-vision-nvr-lite-github/third_party/httplib",
-        "/usr/include",
-        "/usr/local/include",
-        "/usr/include/opencv4",
-        "/usr/include/rknn",
-        "/usr/include/rknpu2",
-        "/opt/rknn/include",
-        "/opt/rknpu2/include",
-        "${workspaceFolder}/**"
-      ],
-      "defines": [
-        "HAVE_RKNN=1"
-      ],
-      "compilerPath": "/usr/bin/g++",
-      "cStandard": "c17",
-      "cppStandard": "c++17",
-      "intelliSenseMode": "linux-gcc-arm64"
     }
   ],
   "version": 4

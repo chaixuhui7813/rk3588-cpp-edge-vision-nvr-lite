@@ -33,15 +33,15 @@
   ],
   [
     "RELEASE_MANIFEST.json",
-    2968
+    3152
   ],
   [
     ".vscode/c_cpp_properties.json",
-    1819
+    620
   ],
   [
     ".vscode/settings.json",
-    901
+    761
   ],
   [
     "data/vtest.avi",
@@ -238,9 +238,5 @@
   [
     "data/events/.gitkeep",
     0
-  ],
-  [
-    ".vscode/intellisense-stubs/opencv2/opencv.hpp",
-    3174
   ]
 ]
