@@ -1,0 +1,21 @@
+{
+  "C_Cpp.default.configurationProvider": "",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/include",
+    "${workspaceFolder}/third_party/httplib",
+    "${workspaceFolder}/.vscode/intellisense-stubs",
+    "${workspaceFolder}/rk3588-cpp-edge-vision-nvr-lite-github/include",
+    "${workspaceFolder}/rk3588-cpp-edge-vision-nvr-lite-github/third_party/httplib",
+    "${workspaceFolder}/rk3588-cpp-edge-vision-nvr-lite-github/.vscode/intellisense-stubs",
+    "D:/13588/rk3588-cpp-edge-vision-nvr-lite-github/include",
+    "D:/13588/rk3588-cpp-edge-vision-nvr-lite-github/third_party/httplib",
+    "D:/13588/rk3588-cpp-edge-vision-nvr-lite-github/.vscode/intellisense-stubs"
+  ],
+  "C_Cpp.default.defines": [],
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.intelliSenseMode": "windows-msvc-x64",
+  "C_Cpp.default.compilerPath": "",
+  "files.associations": {
+    "*.hpp": "cpp"
+  }
+}
